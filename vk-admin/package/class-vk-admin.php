@@ -92,7 +92,7 @@ if ( ! class_exists( 'Vk_Admin' ) ) {
 				global $wp_filesystem;
 
 				// プロダクトの配列を取得・生成
-				$product_json_url = 'https://raw.githubusercontent.com/vektor-inc/vk-banners/main/vk-banners.json';
+				$product_json_url = 'https://raw.githubusercontent.com/vektor-inc/vk-banners/main/vk-admin-banners.json';
 				$product_json     = $wp_filesystem->get_contents( $product_json_url );
 				$product_json     = mb_convert_encoding( $product_json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN' );
 				$product_array    = json_decode( $product_json, true );
